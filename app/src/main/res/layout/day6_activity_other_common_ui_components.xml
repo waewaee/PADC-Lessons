@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".day6.activities.OtherCommonUIComponentsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="Other Common UI Elements"
+            app:titleTextColor="@color/white"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMaterial1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NormalMaterial Button"
+                    android:layout_margin="@dimen/margin_medium"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMaterial2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text Material Button"
+                    android:layout_margin="@dimen/margin_medium"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    app:rippleColor="@android:color/holo_blue_bright" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMaterial3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outlined Material Button"
+                    android:layout_margin="@dimen/margin_medium"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="@dimen/margin_small"
+                    app:cornerRadius="@dimen/margin_medium"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:rippleColor="@android:color/holo_blue_bright" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_medium">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I am chip"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Icon chip"
+                    app:chipIcon="@drawable/ic_baseline_person_24"
+                    app:chipIconTint="@color/teal_200"
+                    android:layout_marginStart="@dimen/margin_medium"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Checkable chip"
+                    android:checkable="true"
+                    android:layout_marginStart="@dimen/margin_medium"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choice chip"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_marginStart="@dimen/margin_medium"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filter chip"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_marginStart="@dimen/margin_medium"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entry chip"
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_marginStart="@dimen/margin_medium"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Action chip"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_marginStart="@dimen/margin_medium"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:chipSpacing="@dimen/margin_medium"
+            app:singleLine="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/groupChip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This"
+                android:checkable="true"
+                app:chipBackgroundColor="@color/teal_200"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/groupChip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is"
+                android:checkable="true"
+                app:chipBackgroundColor="@color/teal_200"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/groupChip3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PADC"
+                android:checkable="true"
+                app:chipBackgroundColor="@color/teal_200"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/groupChip4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Myanmar"
+                android:checkable="true"
+                app:chipBackgroundColor="@color/teal_200"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/groupChip5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foundation"
+                android:checkable="true"
+                app:chipBackgroundColor="@color/teal_200"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/groupChip6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learning"
+                android:checkable="true"
+                app:chipBackgroundColor="@color/teal_200"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/groupChip7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protal"
+                android:checkable="true"
+                app:chipBackgroundColor="@color/teal_200"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="@dimen/margin_small"
+            app:cardCornerRadius="@dimen/margin_medium"
+            android:elevation="@dimen/margin_medium"
+            android:layout_margin="@dimen/margin_medium">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivCardView"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/food"/>
+
+                <TextView
+                    android:id="@+id/tvCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Material Card View"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_regular_3x"
+                    android:layout_toEndOf="@id/ivCardView"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_medium_2"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_medium"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/et_password_hint"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

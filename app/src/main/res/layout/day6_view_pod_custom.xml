@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.waewaee.waeefirst.day6.views.pods.CustomViewPod
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/md_grey_500"
+    tools:context=".day6.views.pods.CustomViewPod">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDummy"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/profile"
+        android:layout_margin="@dimen/margin_medium"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World"
+        android:textSize="@dimen/text_heading_1x"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/ivDummy"
+        android:layout_alignTop="@id/ivDummy"
+        android:layout_marginEnd="@dimen/margin_medium_2"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PADC Myanmar"
+        android:textSize="@dimen/text_regular_2x"
+        android:layout_alignStart="@id/tvTitle"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="@dimen/margin_medium"/>
+
+</com.waewaee.waeefirst.day6.views.pods.CustomViewPod>

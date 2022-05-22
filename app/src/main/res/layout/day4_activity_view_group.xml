@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".day4.ViewGroupActivity"
+    android:layout_margin="@dimen/margin_medium">
+
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/design_default_color_secondary"/>
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Two"
+        android:textAllCaps="false"
+        android:layout_below="@id/btnOne"/>
+
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Three"
+        android:textAllCaps="false"
+        android:layout_toEndOf="@id/btnTwo"
+        android:layout_alignBottom="@id/btnTwo"
+        android:backgroundTint="@color/md_pink_200"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_below="@id/btnThree">
+
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Linear 1"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/md_yellow_500"/>
+
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Linear 2"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/md_purple_A200"/>
+
+        <Button
+            android:id="@+id/btnSix"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Linear 3"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/md_light_green_A400"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profile"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:layout_marginStart="@dimen/margin_medium"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/ivImage"
+        android:layout_alignTop="@id/ivImage"
+        android:layout_margin="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_name"
+            android:textSize="@dimen/text_heading_1x"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_position"
+            android:layout_marginTop="@dimen/margin_medium_2"/>
+
+        <TextView
+            android:id="@+id/tvCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_company"
+            android:textSize="@dimen/text_smaller"
+            android:textColor="@color/md_brown_500"
+            android:layout_marginTop="@dimen/margin_medium_2"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/ivImage"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium_2">
+
+        <ImageView
+            android:id="@+id/ivLandscape"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/landscape_pic"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tvTextOverlapped"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_text_overlapped"
+            android:textSize="@dimen/text_heading_1x"
+            android:textStyle="italic"
+            android:background="@color/simple_yellow"
+            android:layout_gravity="bottom"/>
+    </FrameLayout>
+
+</RelativeLayout>

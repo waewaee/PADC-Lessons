@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_purple_400"
+    tools:context=".day5.SubscriptionsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvSubscriptionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subscriptions Fragment"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_2x"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tvSubscriptionsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSubscriptionsTitle"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_2x"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">WaeeFirst</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!--  activity_main  -->
+    <string name="greeting">Hello World</string>
+    <string name="et_name_hint">Please type your name</string>
+    <string name="btn_hello">Say Hi</string>
+    <string name="cb_apple">Apple</string>
+    <string name="cb_orange">Orange</string>
+    <string name="cb_banana">Banana</string>
+    <string name="fruit_alert_dialog_title">Selected Fruits</string>
+    <string name="rb_male">Male</string>
+    <string name="rb_female">Female</string>
+    <string name="btn_select_date">Select Date</string>
+    <string name="btn_select_time">Select Time</string>
+
+    <!--  activity_ui_homework   -->
+    <string name="tv_title">Your Review</string>
+    <string name="tv_price">$5.58</string>
+    <string name="tv_route">Sanchaung to LMD today at 2:00 PM</string>
+    <string name="tv_driver_name">John Wick</string>
+    <string name="btn_send">Send</string>
+    <string name="tv_name">WaeWaee Saw</string>
+    <string name="tv_position">Senior Mobile Developer</string>
+    <string name="tv_company">PADC Myanmar</string>
+    <string name="tv_text_overlapped">This text is on top!!!</string>
+
+
+    <string name="et_password_hint">Enter your password</string>
+    <string name="long_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia pellentesque leo, id imperdiet eros rhoncus id. Cras aliquet pellentesque nisi, a condimentum enim. Vestibulum ac aliquet magna. Donec efficitur id risus sed porta. Ut hendrerit et velit bibendum ultricies. Donec congue ut dolor nec dignissim. Integer suscipit nunc quis risus facilisis, vel rutrum lectus maximus. Maecenas sed posuere tortor, ut interdum elit. Mauris tempus urna ut purus placerat, sit amet faucibus tellus vestibulum. Vestibulum mi erat, gravida rhoncus eros nec, facilisis scelerisque sem. Aenean justo lorem, dapibus pharetra lacus eu, efficitur luctus dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean pharetra nulla lorem, convallis semper erat dictum et. Mauris purus odio, porta quis orci vitae, tincidunt commodo mauris. Mauris non suscipit nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar nunc maximus felis suscipit lacinia. Nulla sollicitudin semper neque. Nunc blandit, justo sed finibus varius, augue leo mattis nulla, id porttitor justo eros vitae ligula. In vel nibh sollicitudin, tristique metus vel, eleifend elit. Aliquam nec dictum lorem. Duis fringilla, augue ac ultricies finibus, nibh eros vehicula quam, non bibendum ante enim congue elit. Cras nec ultrices augue, et porttitor ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer mattis massa at semper porta. Sed facilisis tempus consequat. Sed dictum magna ut est egestas, et sagittis mi ultrices. Cras placerat sem est, quis semper felis posuere sit amet. Vivamus scelerisque tempor sapien a pretium. In eu enim vulputate erat posuere tempus at vel lacus. Fusce laoreet tempus orci. Donec leo augue, aliquam eu mauris sit amet, tempor aliquam orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar nunc maximus felis suscipit lacinia. Nulla sollicitudin semper neque. Nunc blandit, justo sed finibus varius, augue leo mattis nulla, id porttitor justo eros vitae ligula. In vel nibh sollicitudin, tristique metus vel, eleifend elit. Aliquam nec dictum lorem. Duis fringilla, augue ac ultricies finibus, nibh eros vehicula quam, non bibendum ante enim congue elit. Cras nec ultrices augue, et porttitor ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer mattis massa at semper porta. Sed facilisis tempus consequat. Sed dictum magna ut est egestas, et sagittis mi ultrices. Cras placerat sem est, quis semper felis posuere sit amet. Vivamus scelerisque tempor sapien a pretium. In eu enim vulputate erat posuere tempus at vel lacus. Fusce laoreet tempus orci. Donec leo augue, aliquam eu mauris sit amet, tempor aliquam orci.</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+</resources>

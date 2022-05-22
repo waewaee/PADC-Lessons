@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".day4.MainActivity2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_card_medium_2">
+
+        <TextView
+            android:id="@+id/tvHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/greeting"
+            android:textAllCaps="true"
+            android:padding="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="19dp"
+            />
+
+        <ImageView
+            android:id="@+id/ivGreetingImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/tvHello"
+            android:src="@drawable/pic1"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="@dimen/margin_card_medium_2"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="88dp"
+            />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivGreetingImage"
+            android:inputType="text"
+            android:hint="@string/et_name_hint"
+            android:textColorHint="@color/md_grey_500"
+            android:layout_marginTop="@dimen/margin_large"/>
+
+        <Button
+            android:id="@+id/btnSayHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/btn_hello"
+            android:textAllCaps="false"
+            android:layout_toEndOf="@id/etName"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_alignTop="@id/etName" />
+
+        <Button
+            android:id="@+id/btnRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random"
+            android:textAllCaps="false"
+            android:layout_below="@id/btnSayHi"
+            android:layout_marginTop="@dimen/margin_card_medium_2" />
+
+        <CheckBox
+            android:id="@+id/cbApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_apple"
+            android:layout_below="@id/btnRandom"
+            android:layout_marginTop="@dimen/margin_medium_2"/>
+
+        <CheckBox
+            android:id="@+id/cbOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_orange"
+            android:layout_alignTop="@id/cbApple"
+            android:layout_toEndOf="@id/cbApple"
+            android:layout_marginStart="@dimen/margin_medium" />
+
+        <CheckBox
+            android:id="@+id/cbBanana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/cbOrange"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_toEndOf="@id/cbOrange"
+            android:text="@string/cb_banana" />
+
+        <TextView
+            android:id="@+id/btnCheckFruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/cbBanana"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:text="Check Fruit"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            android:foreground="@drawable/bg_ripple_primary"/>
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/btnCheckFruit"
+            android:layout_marginTop="@dimen/margin_medium_2">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_male"/>
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_female"
+                android:layout_marginStart="@dimen/margin_medium"/>
+
+        </RadioGroup>
+
+        <ToggleButton
+            android:id="@+id/tbLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOn="ON"
+            android:textOff="OFF"
+            android:layout_below="@id/rgGender"
+            android:layout_marginTop="@dimen/margin_medium_2" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtDoorLock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Door Lock"
+            android:layout_toEndOf="@id/tbLight"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_alignBottom="@id/tbLight" />
+
+        <SeekBar
+            android:id="@+id/sbBrightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="50"
+            android:layout_below="@id/tbLight"
+            android:layout_marginTop="@dimen/margin_xxlarge" />
+
+        <RatingBar
+            android:id="@+id/rbRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="3.5"
+            android:layout_below="@id/sbBrightness"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:layout_marginStart="@dimen/margin_medium_2" />
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbRating"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:indeterminate="true"
+            android:max="100"
+            android:minWidth="@dimen/shower_loading_pb_width"
+            android:minHeight="@dimen/shower_loading_pb_height"
+            android:progress="25" />
+
+        <Spinner
+            android:id="@+id/spLunchSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pbLoading"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:layout_marginStart="@dimen/margin_card_medium_2"
+            android:entries="@array/lunch_selection" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actvDrinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spLunchSelection"
+            android:layout_marginTop="@dimen/margin_xxlarge"/>
+
+        <DatePicker
+            android:id="@+id/dpDateToCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actvDrinks"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:datePickerMode="calendar" />
+
+        <Button
+            android:id="@+id/btnSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_select_date"
+            android:textAllCaps="false"
+            android:layout_below="@id/dpDateToCheckOut"
+            android:layout_marginTop="@dimen/margin_medium_3"/>
+
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/btnSelectDate"
+            android:layout_alignTop="@id/btnSelectDate"
+            android:layout_marginStart="@dimen/margin_xxlarge"
+            android:layout_marginTop="@dimen/margin_medium_2" />
+
+        <TimePicker
+            android:id="@+id/tpTimeToCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSelectDate"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:timePickerMode="spinner" />
+
+        <Button
+            android:id="@+id/btnSelectTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_select_time"
+            android:textAllCaps="false"
+            android:layout_below="@id/tpTimeToCheckOut"
+            android:layout_marginTop="@dimen/margin_medium_3"/>
+
+        <TextView
+            android:id="@+id/tvSelectedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/btnSelectTime"
+            android:layout_alignTop="@id/btnSelectTime"
+            android:layout_marginStart="@dimen/margin_xxlarge"
+            android:layout_marginTop="@dimen/margin_medium_2" />
+
+        <Button
+            android:id="@+id/btnUIHomeWorkActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UI Homework Activity"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_below="@id/btnSelectTime"
+            android:layout_marginTop="@dimen/margin_medium_2"/>
+
+        <Button
+            android:id="@+id/btnViewGroupActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Group Activity"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_alignTop="@id/btnUIHomeWorkActivity"
+            android:layout_toEndOf="@id/btnUIHomeWorkActivity"
+            android:layout_marginStart="@dimen/margin_card_medium_2"/>
+
+        <Button
+            android:id="@+id/btnAppCompatComponentsActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App Compat Components Activity"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_below="@id/btnUIHomeWorkActivity"
+            android:layout_marginTop="@dimen/margin_card_medium_2"/>
+
+    </RelativeLayout>
+
+</ScrollView>
