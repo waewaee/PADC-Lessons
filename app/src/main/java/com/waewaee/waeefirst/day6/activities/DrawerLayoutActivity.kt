@@ -14,7 +14,7 @@ import com.waewaee.waeefirst.day4.UIHomeworkActivity
 import kotlinx.android.synthetic.main.day6_activity_drawer_layout.*
 import kotlinx.android.synthetic.main.day6_activity_drawer_layout.view.*
 
-class DrawerLayoutActivity : AppCompatActivity() {
+class DrawerLayoutActivity : AppCompatActivity(), NavigationView. OnNavigationItemSelectedListener{
 
     companion object {
         fun newIntent(context: Context): Intent {
@@ -37,31 +37,33 @@ class DrawerLayoutActivity : AppCompatActivity() {
         )
         toggle.syncState()
 
-        navigationView.setNavigationItemSelectedListener(NavigationView.OnNavigationItemSelectedListener {item: MenuItem ->
-            when(item.itemId) {
-                R.id.actionCamera -> {
-                    Toast.makeText(this, "Camera opening...", Toast.LENGTH_SHORT).show()
-                    drawerLayout.closeDrawer(GravityCompat.START)
-                    toolbar.title = "Camera"
-                }
-                R.id.actionGallery -> {
-                    Toast.makeText(this, "Gallery opening...", Toast.LENGTH_SHORT).show()
-                    drawerLayout.closeDrawer(GravityCompat.START)
-                    toolbar.title = "Gallery"
-                }
-                R.id.actionSlideShow -> {
-                    Toast.makeText(this, "Slide show opening...", Toast.LENGTH_SHORT).show()
-                    drawerLayout.closeDrawer(GravityCompat.START)
-                    toolbar.title = "Slide Show"
-                }
-                R.id.actionTools -> {
-                    Toast.makeText(this, "Tools opening...", Toast.LENGTH_SHORT).show()
-                    drawerLayout.closeDrawer(GravityCompat.START)
-                    toolbar.title = "Tools"
-                }
-            }
-            return@OnNavigationItemSelectedListener true
-        })
+        navigationView.setNavigationItemSelectedListener(this)
+
+//        navigationView.setNavigationItemSelectedListener(NavigationView.OnNavigationItemSelectedListener {item: MenuItem ->
+//            when(item.itemId) {
+//                R.id.actionCamera -> {
+//                    Toast.makeText(this, "Camera opening...", Toast.LENGTH_SHORT).show()
+//                    drawerLayout.closeDrawer(GravityCompat.START)
+//                    toolbar.title = "Camera"
+//                }
+//                R.id.actionGallery -> {
+//                    Toast.makeText(this, "Gallery opening...", Toast.LENGTH_SHORT).show()
+//                    drawerLayout.closeDrawer(GravityCompat.START)
+//                    toolbar.title = "Gallery"
+//                }
+//                R.id.actionSlideShow -> {
+//                    Toast.makeText(this, "Slide show opening...", Toast.LENGTH_SHORT).show()
+//                    drawerLayout.closeDrawer(GravityCompat.START)
+//                    toolbar.title = "Slide Show"
+//                }
+//                R.id.actionTools -> {
+//                    Toast.makeText(this, "Tools opening...", Toast.LENGTH_SHORT).show()
+//                    drawerLayout.closeDrawer(GravityCompat.START)
+//                    toolbar.title = "Tools"
+//                }
+//            }
+//            return@OnNavigationItemSelectedListener true
+//        })
 
         swrl.setOnRefreshListener {
             Toast.makeText(this, "Refreshing...", Toast.LENGTH_LONG).show()
@@ -73,31 +75,31 @@ class DrawerLayoutActivity : AppCompatActivity() {
 
     }
 
-//    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-//        when(item.itemId) {
-//            R.id.actionCamera -> {
-//                Toast.makeText(this, "Camera opening...", Toast.LENGTH_SHORT).show()
-//                drawerLayout.closeDrawer(GravityCompat.START)
-//                toolbar.title = "Camera"
-//            }
-//            R.id.actionGallery -> {
-//                Toast.makeText(this, "Gallery opening...", Toast.LENGTH_SHORT).show()
-//                drawerLayout.closeDrawer(GravityCompat.START)
-//                toolbar.title = "Gallery"
-//            }
-//            R.id.actionSlideShow -> {
-//                Toast.makeText(this, "Slide show opening...", Toast.LENGTH_SHORT).show()
-//                drawerLayout.closeDrawer(GravityCompat.START)
-//                toolbar.title = "Slide Show"
-//            }
-//            R.id.actionTools -> {
-//                Toast.makeText(this, "Tools opening...", Toast.LENGTH_SHORT).show()
-//                drawerLayout.closeDrawer(GravityCompat.START)
-//                toolbar.title = "Tools"
-//            }
-//        }
-//        return true
-//    }
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when(item.itemId) {
+            R.id.actionCamera -> {
+                Toast.makeText(this, "Camera opening...", Toast.LENGTH_SHORT).show()
+                drawerLayout.closeDrawer(GravityCompat.START)
+                toolbar.title = "Camera"
+            }
+            R.id.actionGallery -> {
+                Toast.makeText(this, "Gallery opening...", Toast.LENGTH_SHORT).show()
+                drawerLayout.closeDrawer(GravityCompat.START)
+                toolbar.title = "Gallery"
+            }
+            R.id.actionSlideShow -> {
+                Toast.makeText(this, "Slide show opening...", Toast.LENGTH_SHORT).show()
+                drawerLayout.closeDrawer(GravityCompat.START)
+                toolbar.title = "Slide Show"
+            }
+            R.id.actionTools -> {
+                Toast.makeText(this, "Tools opening...", Toast.LENGTH_SHORT).show()
+                drawerLayout.closeDrawer(GravityCompat.START)
+                toolbar.title = "Tools"
+            }
+        }
+        return true
+    }
 
     override fun onBackPressed() {
         when {
