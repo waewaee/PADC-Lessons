@@ -11,8 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WaeeFirst">
         <activity
-            android:name=".day6.activities.MainActivity"
-            android:exported="true">
+            android:name=".day7.activities.NewsDetailsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WaeeFirst.NoActionBar" />
+        <activity
+            android:name=".day7.activities.NewsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WaeeFirst.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,16 +25,27 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".day6.activities.MainActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
             android:name=".day6.activities.ConstraintLayoutActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".day6.activities.DrawerLayoutActivity"
             android:exported="true"
-            android:theme="@style/Theme.WaeeFirst.NoActionBar"/>
+            android:theme="@style/Theme.WaeeFirst.NoActionBar" />
         <activity
             android:name=".day6.activities.CoordinatorLayoutActivity"
             android:exported="true"
-            android:theme="@style/Theme.WaeeFirst.NoActionBar"/>
+            android:theme="@style/Theme.WaeeFirst.NoActionBar" />
         <activity
             android:name=".day6.activities.CollapsingToolbarLayoutActivity"
             android:exported="true"

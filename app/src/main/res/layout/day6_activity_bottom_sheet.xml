@@ -37,6 +37,6 @@
 
     <include
         android:id="@+id/bottomSheet"
-        layout="@layout/bottom_sheet"/>
+        layout="@layout/day6_bottom_sheet"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
