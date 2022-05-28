@@ -16,6 +16,8 @@
         android:theme="@style/Theme.WaeeFirst">
         <service android:name=".day8.services.ForegroundService"
             android:exported="false"/>
+        <service android:name=".day8.services.DownloadIntentService"
+            android:exported="false"/>
         <activity
             android:name=".day8.activities.MainActivity"
             android:exported="true"
