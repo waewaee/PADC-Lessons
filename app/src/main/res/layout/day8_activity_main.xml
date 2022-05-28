@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".day8.activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="Foreground Service"
+            app:titleTextColor="@color/white"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Service"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            app:cornerRadius="@dimen/margin_medium_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium_2"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEndService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Service"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            app:cornerRadius="@dimen/margin_medium_2"
+            android:layout_below="@id/btnStartService"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium_2"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDownloadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download Image"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            app:cornerRadius="@dimen/margin_medium_2"
+            android:layout_below="@id/btnEndService"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium_2"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notifications"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/margin_medium"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
