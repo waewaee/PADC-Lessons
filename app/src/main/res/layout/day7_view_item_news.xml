@@ -19,8 +19,8 @@
 
             <ImageView
                 android:id="@+id/ivNewsLogo"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="@dimen/logo_size"
+                android:layout_height="@dimen/logo_size"
                 android:src="@drawable/news_logo"/>
 
             <TextView

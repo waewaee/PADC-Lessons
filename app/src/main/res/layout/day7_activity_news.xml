@@ -29,8 +29,8 @@
             android:id="@+id/rvNews"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:itemCount="5"
-            tools:listitem="@layout/day7_view_item_news"
+            tools:itemCount="12"
+            tools:listitem="@layout/day7_view_item_news_small"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
     </RelativeLayout>

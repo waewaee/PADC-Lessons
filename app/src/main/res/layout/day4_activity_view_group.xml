@@ -130,7 +130,7 @@
             android:id="@+id/ivLandscape"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/landscape_pic"
+            android:src="@drawable/landscape"
             android:scaleType="centerCrop"/>
 
         <TextView

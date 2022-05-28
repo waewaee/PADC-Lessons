@@ -4,12 +4,10 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.waewaee.waeefirst.day7.delegates.NewsItemDelegate
 
-class NewsViewHolder(itemView: View, delegate: NewsItemDelegate) : BaseNewsViewHolder(itemView) {
-
+class SmallNewsViewHolder(itemView: View, delegate: NewsItemDelegate) : BaseNewsViewHolder(itemView) {
     init {
         itemView.setOnClickListener {
             delegate.onTapNews()
         }
     }
-
 }
