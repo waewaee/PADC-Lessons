@@ -49,14 +49,38 @@
             android:layout_marginTop="@dimen/margin_medium_2"/>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDownloadImage"
+            android:id="@+id/btnDownloadImageOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Download Image"
+            android:text="Download Image with Intent Service"
             android:textAllCaps="false"
             android:backgroundTint="@color/colorAccent"
             app:cornerRadius="@dimen/margin_medium_2"
             android:layout_below="@id/btnEndService"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium_2"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDownloadImageTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download Image with Job Intent Service"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            app:cornerRadius="@dimen/margin_medium_2"
+            android:layout_below="@id/btnDownloadImageOne"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium_2"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDownloadImageThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download Image with Download Manager"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            app:cornerRadius="@dimen/margin_medium_2"
+            android:layout_below="@id/btnDownloadImageTwo"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/margin_medium_2"/>
 

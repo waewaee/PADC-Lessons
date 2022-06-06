@@ -27,21 +27,21 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Intent Service
-//        btnDownloadImage.setOnClickListener {
-//            val intent = Intent(this, DownloadIntentService::class.java)
-//            intent.putExtra("image_path", "https://img.freepik.com/free-vector/cute-unicorn-jump-air_70350-360.jpg?w=360")
-//            startService(intent)
-//        }
+        btnDownloadImageOne.setOnClickListener {
+            val intent = Intent(this, DownloadIntentService::class.java)
+            intent.putExtra("image_path", "https://img.freepik.com/free-vector/cute-unicorn-jump-air_70350-360.jpg?w=360")
+            startService(intent)
+        }
 
         //Job Intent Service
-//        btnDownloadImage.setOnClickListener {
-//            val intent = Intent(this, DownloadJobIntentService::class.java)
-//            intent.putExtra("image_path", "https://img.freepik.com/free-vector/cute-unicorn-jump-air_70350-360.jpg?w=360")
-//            DownloadJobIntentService.startWork(this, intent)
-//        }
+        btnDownloadImageTwo.setOnClickListener {
+            val intent = Intent(this, DownloadJobIntentService::class.java)
+            intent.putExtra("image_path", "https://img.freepik.com/free-vector/cute-unicorn-jump-air_70350-360.jpg?w=360")
+            DownloadJobIntentService.startWork(this, intent)
+        }
 
         //Work Manager
-        btnDownloadImage.setOnClickListener {
+        btnDownloadImageThree.setOnClickListener {
 
             //Constraints
             val constraints = Constraints.Builder()
