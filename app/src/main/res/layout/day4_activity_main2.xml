@@ -99,10 +99,10 @@
             android:layout_alignBaseline="@id/cbBanana"
             android:layout_alignParentEnd="true"
             android:clickable="true"
+            android:foreground="@drawable/bg_ripple_primary"
             android:text="Check Fruit"
             android:textColor="@color/colorAccent"
-            android:textStyle="italic"
-            android:foreground="@drawable/bg_ripple_primary"/>
+            android:textStyle="italic" />
 
         <RadioGroup
             android:id="@+id/rgGender"
