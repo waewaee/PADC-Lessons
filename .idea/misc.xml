@@ -30,6 +30,8 @@
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day2_activity_first.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day2_activity_main.xml" value="0.15" />
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day2_fragment_first.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day2_fragment_second.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day4_activity_app_compat_components.xml" value="0.15" />
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day4_activity_main2.xml" value="0.15" />
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day4_activity_ui_homework.xml" value="0.15" />
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day5_activity_fragments.xml" value="0.15" />
@@ -40,6 +42,7 @@
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day5_fragment_shorts.xml" value="0.15" />
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day5_fragment_subscriptions.xml" value="0.15" />
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day6_activity_bottom_app_bar.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day6_activity_bottom_navigation_view.xml" value="0.15" />
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day6_activity_bottom_navigation_with_view_pager.xml" value="0.15" />
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day6_activity_bottom_sheet.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/WaeeFirst/app/src/main/res/layout/day6_activity_botttom_navigation_with_view_pager.xml" value="0.15" />
