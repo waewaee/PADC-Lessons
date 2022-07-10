@@ -1,9 +1,6 @@
 package com.waewaee.waeefirst.day11
 
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
 //fun main() {
 //
@@ -58,11 +55,31 @@ import kotlinx.coroutines.runBlocking
 //    println("World!")
 //}
 
-fun main() = runBlocking {
-    val job = GlobalScope.launch { // launch a new coroutine and keep a reference to its job
-        delay(1000L)
-        println("World!")
+//fun main() = runBlocking {
+//    val job = GlobalScope.launch { // launch a new coroutine and keep a reference to its job
+//        delay(1000L)
+//        println("World!")
+//    }
+//    println("Hello,")
+//    job.join() // wait until child coroutine completes
+//}
+
+fun main() = runBlocking { // this: CoroutineScope
+
+    launch {
+        delay(200L)
+        println("Task from runBlocking")
     }
-    println("Hello,")
-    job.join() // wait until child coroutine completes
+
+    coroutineScope { // Creates a coroutine scope
+        launch {
+            delay(500L)
+            println("Task from nested launch")
+        }
+
+        delay(100L)
+        println("Task from coroutine scope") // This line will be printed before the nested launch
+    }
+
+    println("Coroutine scope is over") // This line will not be printed until the nested launch completes
 }
