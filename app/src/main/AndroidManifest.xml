@@ -2,10 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.waewaee.waeefirst">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:name=".PADCApplication"
@@ -15,27 +15,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WaeeFirst">
+        <activity
+            android:name=".day14.ReactiveMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <service android:name=".day8.services.DownloadJobIntentService"
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".day8.services.DownloadJobIntentService"
             android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE"/>
-
-        <service android:name=".day8.services.ForegroundService"
-            android:exported="false"/>
-
-        <service android:name=".day8.services.DownloadIntentService"
-            android:exported="false"/>
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".day8.services.ForegroundService"
+            android:exported="false" />
+        <service
+            android:name=".day8.services.DownloadIntentService"
+            android:exported="false" />
 
         <activity
             android:name=".day8.activities.MainActivity"
             android:exported="true"
             android:label="Service"
             android:theme="@style/Theme.WaeeFirst.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
         <activity
             android:name=".day7.activities.NewsDetailsActivity"
@@ -45,11 +55,13 @@
             android:name=".day7.activities.NewsActivity"
             android:exported="true"
             android:theme="@style/Theme.WaeeFirst.NoActionBar">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".day6.activities.MainActivity"
